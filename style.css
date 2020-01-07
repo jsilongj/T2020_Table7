@@ -220,6 +220,35 @@ img {
   100% {
     -webkit-transform: translate(19px, 0);
     transform: translate(19px, 0); } }
+
+/* login buttons*/
+.login-button-css{
+    /*-webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;*/
+    width: 130px;
+    height: 45px;
+    background-color: #ff0000;
+    border: 1px #ff0000;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+     }
+
+.forget-button-css{
+     width: 130px;
+     height: 45px;
+     background-color: #ffffff;
+     border: 2px #ff0000;
+     font-weight: 700;
+     font-size: 14px;
+     color: #ff0000;
+     text-align: center;
+     cursor: pointer;
+   }
+
 /* :: 3.5.0 Miscellaneous */
 .jarallax {
   position: relative;
@@ -1461,7 +1490,7 @@ img {
         border-radius: 5px;
         cursor: pointer; }
         .single-widget-area.search-widget form button:hover {
-          background-color: #ffbb38;
+          background-color: #ff0000;
           color: #003679; }
   .single-widget-area.cata-widget ul {
     padding-left: 35px; }
