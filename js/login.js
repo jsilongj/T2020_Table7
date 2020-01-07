@@ -6,9 +6,6 @@ const header = {
   'token': token,
 }
 
-const johnId = "1"
-const johnAccount = "10"
-
 async function getUser(username){
   try {
     const response = await fetch(`http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/${username}`, {
