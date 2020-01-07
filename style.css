@@ -236,7 +236,28 @@ img {
     text-align: center;
     cursor: pointer;}
 
-
+/*transaction table */
+.transaction-table{
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  text-align: left;
+  background-color: none;
+  color: black;
+}
+.transaction-table > td,tr {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+/*
+.transaction-table > tr:nth-child(even) {
+  background-color: #ff0000;
+}*/
+}
 
 /* :: 3.5.0 Miscellaneous */
 .jarallax {
