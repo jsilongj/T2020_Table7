@@ -234,20 +234,9 @@ img {
     font-size: 14px;
     color: #ffffff;
     text-align: center;
-    cursor: pointer;
-     }
+    cursor: pointer;}
 
-.forget-button-css{
-     width: 130px;
-     height: 45px;
-     background-color: #ffffff;
-     border: 2px #ff0000;
-     font-weight: 700;
-     font-size: 14px;
-     color: #ff0000;
-     text-align: center;
-     cursor: pointer;
-   }
+
 
 /* :: 3.5.0 Miscellaneous */
 .jarallax {
