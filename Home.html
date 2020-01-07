@@ -41,7 +41,9 @@
             <div></div>
         </div>
     </div>
-
+    <script>
+        var u = sessionStorage.getItem("user");
+    </script>
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
         <!-- Top Header Area -->
@@ -57,7 +59,9 @@
                         <!-- Top Contact Info -->
                         <div class="top-contact-info d-flex align-items-center">
                           <div class="logo">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="#" onload="login()"><img src="img/core-img/user.png" alt="" width="50" height="50"> <span>Welcome !</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="#" onload="login()"><img src="img/core-img/user.png" alt="" width="50" height="50"> <span>Welcome,  <script>
+        document.write(u)
+      </script>!</span></a>
                           </div>
                           <div class="logo inbox-dropdown">
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="inbox"><img src="img/core-img/bell.png" alt="" width="30" height="30"> <span>Inbox</span>
@@ -146,7 +150,6 @@
 
 <script>
 
-
     var customerId = sessionStorage.getItem("id");
     console.log(customerId);
     if(customerId == 1){
@@ -221,8 +224,8 @@
                             <i class="icon-coin"></i>
                         </div>
                         <div class="text">
-                            <h5>No additional papers</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
+                            <h5>Cards</h5>
+                            <p>We have different types of cards to suit your needs</p>
                         </div>
                     </div>
                 </div>
@@ -234,37 +237,14 @@
                             <i class="icon-smartphone-1"></i>
                         </div>
                         <div class="text">
-                            <h5>Secure financial services</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
+                            <h5>Investment</h5>
+                            <p>We have a team of experts to help your money work for you</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="600ms">
-                        <div class="icon">
-                            <i class="icon-diamond"></i>
-                        </div>
-                        <div class="text">
-                            <h5>Good investments</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <div class="icon">
-                            <i class="icon-piggy-bank"></i>
-                        </div>
-                        <div class="text">
-                            <h5>Accumulation goals</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -296,11 +276,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
                     </div>
                 </div>
             </div>

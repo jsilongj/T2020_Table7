@@ -31,10 +31,11 @@ function login() {
     alert("Error Password or Username")
   }else{
     i = res.customerId;
-
+    u = res.userName;
     sessionStorage.setItem('id',i);
-
+    sessionStorage.setItem('user',u);
     console.log(sessionStorage.getItem('id'));
+    console.log(sessionStorage.getItem('user'));
     window.location = "Home.html";
     // alert(i)
 
