@@ -145,9 +145,10 @@ $(function () {
       }, {});
 
       transactionDetails.reduce(function (res, transaction) {
-        const date = new Date(transaction.date);
+        const date = new Date(transaction.date).getDate();
+
         if (!res[date]) {
-          res[date] = { x: date, y: 0 };
+          res[date] = { x: date, y: 0, };
           monthlySpending.push(res[date])
         }
         res[date].y += parseInt(transaction.amount);
