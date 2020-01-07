@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>DBS - Banking &amp; </title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+			body {
+				background-color: #fafafa;
+				font-size: 16px;
+				line-height: 1.5;
+			}
+
+			h1,h2,h3,h4,h5,h6 {
+				font-weight: 400;
+			}
+
+			#header {
+				border-bottom: 5px solid #37474F;
+				color: #37474F;
+				margin-bottom: 1.5rem;
+				padding: 1rem 0;
+			}
+
+			#revenue-tag {
+				font-weight: inherit !important;
+				border-radius: 0px !important;
+			}
+
+			.card {
+				border: 0rem;
+				border-radius: 0rem;
+			}
+
+			.card-header {
+				background-color: #37474F;
+				border-radius: 0 !important;
+				color:	white;
+				margin-bottom: 0;
+				padding:	1rem;
+			}
+
+			.card-block {
+				border: 1px solid #cccccc;
+			}
+
+			.shadow {
+				box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+										0 1px 18px 0 rgba(0, 0, 0, 0.12),
+										0 3px 5px -1px rgba(0, 0, 0, 0.2);
+			}
+
+			#revenue-column-chart, #products-revenue-pie-chart, #orders-spline-chart {
+				height: 300px;
+				width: 100%;
+			}
+		</style>
+
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script>
+        var u = sessionStorage.getItem("user");
+    </script>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 d-flex justify-content-between">
+                        <!-- Logo Area -->
+                        <div class="logo">
+                            <a href="index.html"><img src="img/core-img/logo.png" alt="" width="100" height="300"></a>
+                        </div>
+
+                        <!-- Top Contact Info -->
+                        <div class="top-contact-info d-flex align-items-center">
+                          <div class="logo">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" onload="getUser(username)"><img src="img/core-img/user.png" alt="" width="30" height="30"> <span>Welcome,  <script>
+        document.write(u)
+      </script>!</span></a>
+                          </div>
+                          <div class="logo">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" ><img src="img/core-img/bell.png" alt="" width="30" height="30"> <span>Inbox</span></a>
+                          </div>
+                          <div class="logo">
+                            <a href="login.html" data-toggle="tooltip" data-placement="bottom"><img src="img/core-img/lock.png" alt="" width="30" height="30"> <span>Log Out</span></a>
+                          </div>
+                          <div class="logo">
+                            <form action="/action_page.php">
+                              <input type="text" placeholder="Search.." name="search">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="credit-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="creditNav">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="Home.html">Home</a></li>
+                                    <li><a href="transaction.html">Transaction History</a></li>
+                                    <!--
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="post.html">Post</a></li>
+                                            <li><a href="single-post.html">Single Post</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="elements.html">Elements</a></li>
+                                        </ul>
+                                    </li>
+                                    -->
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="contact">
+                            <a href="#"><img src="img/core-img/call2.png" alt=""> 1800 111 1111</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+
+  <div class="container">
+			<h2 id="header">
+				<strong>Spending History</strong>
+				<small class="text-muted">Dec 2019 - Jan 2020</small>
+			</h2>
+
+			<div class="row m-b-1">
+				<div class="col-lg-12">
+					<div class="card shadow">
+						<h4 class="card-header">Spending<span class="tag tag-success" id="total-spending"></span></h4>
+						<div class="card-block">
+							<div id="revenue-column-chart"></div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- row -->
+</br>
+			<div class="row m-b-1">
+				<div class="col-lg-6">
+					<div class="card shadow">
+						<h4 class="card-header">Spending By Category</h4>
+						<div class="card-block">
+							<div id="products-revenue-pie-chart"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-6">
+					<div class="card shadow">
+						<h4 class="card-header">Top Spending</h4>
+						<div class="card-block">
+            <div id ="category-spending"></div>
+							<div id="orders-spline-chart"></div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- row -->
+</br>
+      <div class="row m-b-1">
+				<div class="col-lg-12">
+					<div class="card shadow">
+						<h4 class="card-header">Transaction History</h4>
+						<div class="card-block">
+							<table class ="transaction-table" id="transactionHistory">
+                <tr>
+                  <th>Name</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Tag</th>
+                 </tr>
+              </table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- container -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="copywrite-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copywrite-content d-flex flex-wrap justify-content-between align-items-center">
+                            <!-- Footer Logo -->
+                            <a href="index.html" class="footer-logo"><img src="img/core-img/logo.png" alt="" width="100" height="300"></a>
+
+                            <!-- Copywrite Text -->
+                            <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <script src="js/canvasjs/canvasjs.min.js"></script>
+    <script src="js/transaction.js"></script>
+
+</body>
+
+</html>
