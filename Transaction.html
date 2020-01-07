@@ -17,6 +17,60 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <style>
+			body {
+				background-color: #fafafa;
+				font-size: 16px;
+				line-height: 1.5;
+			}
+			
+			h1,h2,h3,h4,h5,h6 {
+				font-weight: 400;	
+			}
+			
+			#header {
+				border-bottom: 5px solid #37474F;
+				color: #37474F;
+				margin-bottom: 1.5rem;
+				padding: 1rem 0;
+			}
+			
+			#revenue-tag {
+				font-weight: inherit !important;
+				border-radius: 0px !important;
+			}
+			
+			.card {
+				border: 0rem;
+				border-radius: 0rem;
+			}
+			
+			.card-header {
+				background-color: #37474F;
+				border-radius: 0 !important;
+				color:	white;
+				margin-bottom: 0;
+				padding:	1rem;
+			}
+			
+			.card-block {
+				border: 1px solid #cccccc;	
+			}
+			
+			.shadow {
+				box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+										0 1px 18px 0 rgba(0, 0, 0, 0.12),
+										0 3px 5px -1px rgba(0, 0, 0, 0.2);
+			}
+			
+			#revenue-column-chart, #products-revenue-pie-chart, #orders-spline-chart {
+				height: 300px;
+				width: 100%;
+			}			
+		</style>
+
+
+
 </head>
 
 <body>
@@ -110,236 +164,45 @@
     <!-- ##### Header Area End ##### -->
 
 
+  <div class="container">
+			<h2 id="header">
+				<strong>Spending History</strong>
+				<small class="text-muted">Dec 2019 - Jan 2020</small>
+			</h2>
+			
+			<div class="row m-b-1">
+				<div class="col-xs-12">
+					<div class="card shadow">
+						<h4 class="card-header">Spending<span class="tag tag-success" id="total-spending"></span></h4>
+						<div class="card-block">
+							<div id="revenue-column-chart"></div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- row -->
 
+			<div class="row m-b-1">
+				<div class="col-lg-6">
+					<div class="card shadow">
+						<h4 class="card-header">Product Wise Revenue</h4>
+						<div class="card-block">
+							<div id="products-revenue-pie-chart"></div>
+						</div>
+					</div>
+				</div>
 
-
-
-
-    <!-- ##### Services Area Start ###### -->
-    <section class="services-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Heading -->
-                    <div class="section-heading text-center mb-100 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="line"></div>
-                        <p>Take look at our</p>
-                        <h2>Our services</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="icon">
-                            <i class="icon-profits"></i>
-                        </div>
-                        <div class="text">
-                            <h5>All the loans</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="icon">
-                            <i class="icon-money-1"></i>
-                        </div>
-                        <div class="text">
-                            <h5>Easy and fast answer</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="400ms">
-                        <div class="icon">
-                            <i class="icon-coin"></i>
-                        </div>
-                        <div class="text">
-                            <h5>No additional papers</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="icon">
-                            <i class="icon-smartphone-1"></i>
-                        </div>
-                        <div class="text">
-                            <h5>Secure financial services</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="600ms">
-                        <div class="icon">
-                            <i class="icon-diamond"></i>
-                        </div>
-                        <div class="text">
-                            <h5>Good investments</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <div class="icon">
-                            <i class="icon-piggy-bank"></i>
-                        </div>
-                        <div class="text">
-                            <h5>Accumulation goals</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Services Area End ###### -->
-
-
-
-    <!-- ##### Newsletter Area Start ###### -->
-    <section class="newsletter-area section-padding-100 bg-img jarallax" style="background-image: url(img/bg-img/6.jpg);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-10 col-lg-8">
-                    <div class="nl-content text-center">
-                        <h2>Subscribe to our newsletter</h2>
-                        <form action="#" method="post">
-                            <input type="email" name="nl-email" id="nlemail" placeholder="Your e-mail">
-                            <button type="submit">Subscribe</button>
-                        </form>
-                        <p>Curabitur elit turpis, maximus quis ullamcorper sed, maximus eu neque. Cras ultrices erat nec auctor blandit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Newsletter Area End ###### -->
-
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-100">
-                        <h5 class="widget-title">About Us</h5>
-                        <!-- Nav -->
-                        <nav>
-                            <ul>
-                                <li><a href="#">Homepage</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Services &amp; Offers</a></li>
-                                <li><a href="#">Portfolio Presentation</a></li>
-                                <li><a href="#">The News</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-100">
-                        <h5 class="widget-title">Solutions</h5>
-                        <!-- Nav -->
-                        <nav>
-                            <ul>
-                                <li><a href="#">Our Loans</a></li>
-                                <li><a href="#">Trading &amp; Commerce</a></li>
-                                <li><a href="#">Banking &amp; Private Equity</a></li>
-                                <li><a href="#">Industrial &amp; Factory</a></li>
-                                <li><a href="#">Financial Solutions</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-100">
-                        <h5 class="widget-title">Our Loans</h5>
-                        <!-- Nav -->
-                        <nav>
-                            <ul>
-                                <li><a href="#">Our Loans</a></li>
-                                <li><a href="#">Trading &amp; Commerce</a></li>
-                                <li><a href="#">Banking &amp; Private Equity</a></li>
-                                <li><a href="#">Industrial &amp; Factory</a></li>
-                                <li><a href="#">Financial Solutions</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-100">
-                        <h5 class="widget-title">Latest News</h5>
-
-                        <!-- Single News Area -->
-                        <div class="single-latest-news-area d-flex align-items-center">
-                            <div class="news-thumbnail">
-                                <img src="img/bg-img/7.jpg" alt="">
-                            </div>
-                            <div class="news-content">
-                                <a href="#">How to get the best loan?</a>
-                                <div class="news-meta">
-                                    <a href="#" class="post-author"><img src="img/core-img/pencil.png" alt=""> Jane Smith</a>
-                                    <a href="#" class="post-date"><img src="img/core-img/calendar.png" alt=""> April 26</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single News Area -->
-                        <div class="single-latest-news-area d-flex align-items-center">
-                            <div class="news-thumbnail">
-                                <img src="img/bg-img/8.jpg" alt="">
-                            </div>
-                            <div class="news-content">
-                                <a href="#">A new way to get a loan</a>
-                                <div class="news-meta">
-                                    <a href="#" class="post-author"><img src="img/core-img/pencil.png" alt=""> Jane Smith</a>
-                                    <a href="#" class="post-date"><img src="img/core-img/calendar.png" alt=""> April 26</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single News Area -->
-                        <div class="single-latest-news-area d-flex align-items-center">
-                            <div class="news-thumbnail">
-                                <img src="img/bg-img/9.jpg" alt="">
-                            </div>
-                            <div class="news-content">
-                                <a href="#">Finance you home</a>
-                                <div class="news-meta">
-                                    <a href="#" class="post-author"><img src="img/core-img/pencil.png" alt=""> Jane Smith</a>
-                                    <a href="#" class="post-date"><img src="img/core-img/calendar.png" alt=""> April 26</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+				<div class="col-lg-6">
+					<div class="card shadow">
+						<h4 class="card-header">Orders</h4>
+						<div class="card-block">
+            <div id ="category-spending"></div>
+							{# <div id="orders-spline-chart"></div> #}
+						</div>
+					</div>
+				</div>
+			</div> <!-- row -->
+		</div> <!-- container -->
+    
 
         <!-- Copywrite Area -->
         <div class="copywrite-area">
@@ -373,6 +236,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script src="js/canvasjs/canvasjs.min.js"></script>
+    <script src="js/transaction.js"></script>
+
 </body>
 
 </html>
