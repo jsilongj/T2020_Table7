@@ -13,11 +13,15 @@ async function getUser(username){
       headers: header,
     });
     return await response.json();
+
   }
   catch(err){
     console.log(err);
   }
 }
+
+var u
+var i
 
 function login() {
   let username = document.getElementById("username").value;
@@ -25,37 +29,12 @@ function login() {
   {
     if (res.userName == null){
     alert("Error Password or Username")
-  }else{window.location = "Home.html";;}
+  }else{
+    window.location = "Home.html";
+    u = res.userName
+    i = res.customerId
+  }
     console.log(res)
   });
 
-
 }
-
-// async function validate()
-// {
-//
-//
-//   var username = document.getElementById("username").value;
-//   var password = document.getElementById("password").value;
-//
-//   if ( username == "marytan" && password == "abc"){
-//     alert ("Login successfully");
-//     // window.location = "success.html"; // Redirecting to other page.
-//     return false;
-// }
-// else{
-//   {
-//     alert("Error Password or Username")/*displays error message*/
-//    }
-//   return response.json();
-// }
-//
-//
-// function contains(arr, key, val) {
-//     arr = getUser()
-//     for (var i = 0; i < arr.length; i++) {
-//         if(arr[i][key] === val) return true;
-//     }
-//     return false;
-// }
