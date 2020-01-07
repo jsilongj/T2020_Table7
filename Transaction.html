@@ -23,28 +23,28 @@
 				font-size: 16px;
 				line-height: 1.5;
 			}
-			
+
 			h1,h2,h3,h4,h5,h6 {
-				font-weight: 400;	
+				font-weight: 400;
 			}
-			
+
 			#header {
 				border-bottom: 5px solid #37474F;
 				color: #37474F;
 				margin-bottom: 1.5rem;
 				padding: 1rem 0;
 			}
-			
+
 			#revenue-tag {
 				font-weight: inherit !important;
 				border-radius: 0px !important;
 			}
-			
+
 			.card {
 				border: 0rem;
 				border-radius: 0rem;
 			}
-			
+
 			.card-header {
 				background-color: #37474F;
 				border-radius: 0 !important;
@@ -52,21 +52,21 @@
 				margin-bottom: 0;
 				padding:	1rem;
 			}
-			
+
 			.card-block {
-				border: 1px solid #cccccc;	
+				border: 1px solid #cccccc;
 			}
-			
+
 			.shadow {
 				box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
 										0 1px 18px 0 rgba(0, 0, 0, 0.12),
 										0 3px 5px -1px rgba(0, 0, 0, 0.2);
 			}
-			
+
 			#revenue-column-chart, #products-revenue-pie-chart, #orders-spline-chart {
 				height: 300px;
 				width: 100%;
-			}			
+			}
 		</style>
 
 
@@ -83,7 +83,9 @@
             <div></div>
         </div>
     </div>
-
+    <script>
+        var u = sessionStorage.getItem("user");
+    </script>
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
         <!-- Top Header Area -->
@@ -99,13 +101,15 @@
                         <!-- Top Contact Info -->
                         <div class="top-contact-info d-flex align-items-center">
                           <div class="logo">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="#" onload="getUser(username)"><img src="img/core-img/user.png" alt="" width="30" height="30"> <span>Welcome !</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" onload="getUser(username)"><img src="img/core-img/user.png" alt="" width="30" height="30"> <span>Welcome,  <script>
+        document.write(u)
+      </script>!</span></a>
                           </div>
                           <div class="logo">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="inbox"><img src="img/core-img/bell.png" alt="" width="30" height="30"> <span>Inbox</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" ><img src="img/core-img/bell.png" alt="" width="30" height="30"> <span>Inbox</span></a>
                           </div>
                           <div class="logo">
-                            <a href="login.html" data-toggle="tooltip" data-placement="bottom" title="log out"><img src="img/core-img/lock.png" alt="" width="30" height="30"> <span>Log Out</span></a>
+                            <a href="login.html" data-toggle="tooltip" data-placement="bottom"><img src="img/core-img/lock.png" alt="" width="30" height="30"> <span>Log Out</span></a>
                           </div>
                           <div class="logo">
                             <form action="/action_page.php">
@@ -180,7 +184,7 @@
 				<strong>Spending History</strong>
 				<small class="text-muted">Dec 2019 - Jan 2020</small>
 			</h2>
-			
+
 			<div class="row m-b-1">
 				<div class="col-lg-12">
 					<div class="card shadow">
@@ -231,8 +235,8 @@
 				</div>
 			</div>
 		</div> <!-- container -->
-    
-    
+
+
 
         <!-- Copywrite Area -->
         <div class="copywrite-area">
