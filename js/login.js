@@ -30,9 +30,14 @@ function login() {
     if (res.userName == null){
     alert("Error Password or Username")
   }else{
+    i = res.customerId;
+
+    sessionStorage.setItem('id',i);
+
+    console.log(sessionStorage.getItem('id'));
     window.location = "Home.html";
-    u = res.userName
-    i = res.customerId
+    // alert(i)
+
   }
     console.log(res)
   });
