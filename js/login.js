@@ -6,10 +6,7 @@ const header = {
   'token': token,
 }
 
-const johnId = "1"
-const johnAccount = "10"
-
-async function  getUser(username){
+async function getUser(username){
   try {
     const response = await fetch(`http://techtrek-api-gateway.ap-southeast-1.elasticbeanstalk.com/customers/${username}`, {
       method: 'GET',
@@ -19,15 +16,21 @@ async function  getUser(username){
   }
   catch(err){
     console.log(err);
-    alert("Error Password or Username");
   }
 }
 
 function login() {
-  let username = document.getElementById("login-button").value;
-  getUser(username).then((res) => console.log(res));
-}
+  let username = document.getElementById("username").value;
+  getUser(username).then((res) =>
+  {
+    if (res.userName == null){
+    alert("Error Password or Username")
+  }else{window.location = "Home.html";;}
+    console.log(res)
+  });
 
+
+}
 
 // async function validate()
 // {
