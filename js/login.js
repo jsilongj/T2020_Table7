@@ -13,11 +13,15 @@ async function getUser(username){
       headers: header,
     });
     return await response.json();
+
   }
   catch(err){
     console.log(err);
   }
 }
+
+var u
+var i
 
 function login() {
   let username = document.getElementById("username").value;
@@ -25,9 +29,12 @@ function login() {
   {
     if (res.userName == null){
     alert("Error Password or Username")
-  }else{window.location = "Home.html";}
+  }else{
+    window.location = "Home.html";
+    u = res.userName
+    i = res.customerId
+  }
     console.log(res)
   });
-
 
 }
